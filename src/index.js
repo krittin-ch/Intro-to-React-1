@@ -53,6 +53,35 @@ class Hello5 extends React.Component {
 
 // React State
 // State Object
+class Person extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      fName: "Tin",
+      lName: "Namwan",
+      age: 20
+    }
+  }
+
+  changeName = () => {
+    this.setState({
+      fName: "Spicy",
+      lName: "Lemon"
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Hello, my name is {this.state.fName} {this.state.lName} ({this.state.age})</p>
+        <button 
+        type="button"
+        onClick={this.changeName}>Change Name</button>
+      </div>
+    )
+  }
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(myFirstElement)
@@ -61,3 +90,4 @@ root.render(<Hello2/>)
 root.render(<Hello3 name="Tinwan"/>)
 root.render(<Hello4 name="Wantin"/>)
 root.render(<Hello5 name="Jubjib"/>)
+root.render(<Person/>)
