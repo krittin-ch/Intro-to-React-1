@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Intro-to-React-1
+
+This project is the introductio to React library and you can find the project [React 101](https://www.borntodev.com/2020/07/15/react-101/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
